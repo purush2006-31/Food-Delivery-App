@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | BiteDash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                Bite<span>Dash</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="cart.html" class="cart-icon-container">Cart <span id="cart-badge-count" class="cart-badge" style="display:none;">0</span></a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="dashboard.html">Admin Panel</a></li>
+            </ul>
+            <div class="nav-right" id="nav-auth-section">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Restaurant Details Header -->
+        <div class="hero" id="menu-restaurant-header" style="padding: 2.5rem; text-align: left; background: linear-gradient(135deg, var(--secondary) 0%, #3a1c5d 100%);">
+            <h1 id="restaurant-header-name">Loading Restaurant...</h1>
+            <div style="display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                <span class="rating-badge" id="restaurant-header-rating">⭐ -</span>
+                <span class="cuisine-badge" id="restaurant-header-cuisine">-</span>
+                <span style="opacity: 0.9;" id="restaurant-header-location">📍 -</span>
+            </div>
+        </div>
+
+        <!-- Food items listing -->
+        <div class="section-header">
+            <h2>Food Menu</h2>
+            <div id="food-category-filters" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+
+        <div class="grid-cols-3" id="foods-list-container">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </main>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initMenuPage();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | BiteDash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                Bite<span>Dash</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="cart.html" class="cart-icon-container">Cart <span id="cart-badge-count" class="cart-badge" style="display:none;">0</span></a></li>
+                <li><a href="orders.html" class="active">My Orders</a></li>
+                <li><a href="dashboard.html">Admin Panel</a></li>
+            </ul>
+            <div class="nav-right" id="nav-auth-section">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-header">
+            <h2>Your Orders</h2>
+        </div>
+
+        <div class="orders-list" id="orders-list-container">
+            <!-- Dynamically populated by JS -->
+            <p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Loading your orders...</p>
+        </div>
+    </main>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initOrdersPage();
+        });
+    </script>
+</body>
+</html>
