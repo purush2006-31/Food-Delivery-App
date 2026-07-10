@@ -70,6 +70,10 @@ Interactive cart showing item breakdown, quantity selectors, live bill calculati
 Order history page showing a visual, responsive delivery tracking timeline matching order states (`Preparing` ➔ `Out for Delivery` ➔ `Delivered`):
 ![Order Tracking Page](screenshots/order_timeline.png)
 
+### 📊 6. Unified Admin Control Panel
+Unified management control panel allowing administrators to perform real-time CRUD operations on Customers, Restaurants, Food Items, and Orders:
+![Admin Control Panel](screenshots/admin_panel.png)
+
 ---
 
 ## Running the Project Locally
