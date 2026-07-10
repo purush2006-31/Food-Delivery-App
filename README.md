@@ -46,6 +46,32 @@ FoodDeliveryApp/
 
 ---
 
+## Application Screenshots
+
+Here are the visual representations of the BiteDash frontend application pages:
+
+### 🏠 1. Home Landing Page
+Beautiful home page with an interactive search bar, search-by-cuisine cards, and a grid of popular featured dishes:
+![Home Landing Page](screenshots/home_page.png)
+
+### 🏢 2. Restaurant Directory Page
+Listings of all pre-seeded top-rated dining spots featuring custom tags, cuisine categories, ratings, and locations:
+![Restaurant Directory Page](screenshots/restaurants_list.png)
+
+### 👤 3. Customer & Admin Login Page
+Clean, centralized login container with tabs to switch between Customer profiles and Admin control panels:
+![Login Page](screenshots/login_page.png)
+
+### 🛒 4. Interactive Shopping Cart Page
+Interactive cart showing item breakdown, quantity selectors, live bill calculations (subtotal, delivery partner fee, taxes), and checkout controls:
+![Shopping Cart Page](screenshots/cart_page.png)
+
+### 🚚 5. Order Tracking Timeline Page
+Order history page showing a visual, responsive delivery tracking timeline matching order states (`Preparing` ➔ `Out for Delivery` ➔ `Delivered`):
+![Order Tracking Page](screenshots/order_timeline.png)
+
+---
+
 ## Running the Project Locally
 
 ### 1. Start the Backend Server
